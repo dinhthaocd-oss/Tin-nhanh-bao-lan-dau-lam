@@ -1,0 +1,334 @@
+:root{
+    --muc: #15181D;
+    --nen: #EDEAE2;
+    --trang: #FBFAF7;
+    --line: #D8D4C9;
+    --font-title: "Literata", Georgia, serif; 
+    --font-body: "Inter", -apple-system, sans-serif;
+}
+* { 
+    box-sizing: border-box; /* Giữ chuẩn width/height khi có padding và border */
+    margin: 0;              /* Xóa lề ngoài mặc định của trình duyệt */
+    padding: 0;             /* Xóa khoảng đệm trong mặc định của trình duyệt */
+    
+}
+
+body{
+    line-height: 1.55;
+    background-color: var(--nen);
+    color: var(--muc);
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+.khung{
+    width: 100%;
+    margin: 0;
+    padding: 0 24px;
+    
+}
+
+.thanhdangnhap .khung{
+    background-color: var(--trang);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    color:var(--muc);
+}
+
+.thanhdangnhap .lien-ket{display:flex; gap:18px;}
+.thanhdangnhap .lien-ket a{color:var(--muc);text-decoration: none;}
+.thanhdangnhap .lien-ket a:hover{color: #605f5f;}
+
+.logo-row {
+  padding: 22px 0 10px;
+}
+
+.logo{
+    font-family: var(--font-title);
+    font-weight: 700px;
+    font-size: clamp(32px,40px,48px); /* clamp () là một hàm trong CSS giúp tự động giới hạn kích thước;*/
+    margin: 0;
+    letter-spacing: -0.5px;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--muc);
+    font-weight: bold;
+}
+
+.logo-slogan{
+    margin:4px 0px 0px;
+    color:var(--muc);
+    font-size: 15px;
+}
+
+.main-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 0 14px;
+    position: relative;
+}
+.main-nav a{
+    border: none;
+    background-color: transparent; /* transparent là tàng hình oke đừng hỏi nhiều */ /* Sửa chính tả: tàn hình -> tàng hình */
+    color: var(--muc);
+    font-family: var(--font-body);
+    font-size: 15.2px;
+    font-weight: 600px;
+    padding: 8px 14px;
+    cursor: pointer; /*chuyển con trỏ chuột thành hình bàn tay trỏ chuột */
+    text-decoration: none;
+}
+
+
+.thanh-tim-kiem{
+    margin-left: auto;
+    display: flex;
+    gap: 6px;
+}
+
+.tim-kiem-input{
+    border: 1px solid var(--trang);
+    background-color: var(--trang);
+    color: var(--muc);
+    padding: 8px 12px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.btn-tim-kiem{
+    border: 1px solid var(--muc);
+    background-color: var(--muc);
+    color: var(--trang);
+    padding: 8px 16px;
+    font-size: 13px;
+    font-family: var(--font-body);
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 10px;    
+}
+
+.btn-tim-kiem:hover{
+    background-color: var(--muc);
+    color: var(--trang);
+}
+
+.bao-nong-ke{
+    margin: 30px 0px;
+    border-top: 2px solid var(--line);
+    border-bottom: 2px solid var(--line);
+}
+
+.bao-nong{
+    margin: 0px 200px;
+}
+.khung-bao-nong{
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 44px;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.Tieu-de-chinh{
+    font-size: 28px;
+    font-weight: bold;
+    border: 2px solid #15181D;
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+    color:var(--muc);
+    text-decoration: none;
+}
+
+.Tieu-de-chinh:hover{
+    color: #605f5f;
+}
+
+
+.Mo-ta-chinh, .Thong-tin-bai{
+    font-size: 13px;
+}
+
+.Thong-tin-bai{margin: 5px;}
+
+.anh-bao-nong{
+    margin: 0px;
+    width:  500px   ;
+    height: auto;
+}
+
+
+.khung-bao-nong .chu-thich{
+    margin: 0px;
+    font-size: 12px;
+    background-color: var(--muc);
+    color: var(--trang);
+}
+
+.danh-sach-bao{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    margin: 0px 50px;
+  }
+.link-bao-moi{
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+    color:var(--muc);
+    text-decoration: none;
+}
+    
+.link-bao-moi:hover{
+    color: #605f5f;
+}
+
+.bao-moi{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+    border-bottom: 2px solid var(--line);
+}
+
+.danh-muc-nho{
+    color: red;
+    font-weight: bold;
+}
+
+.bao-moi-minh-hoa{
+    width: 250px;
+    height: auto;
+}
+
+.ten-danh-sach{
+    border-bottom: 2px solid var(--line);
+}
+
+footer{
+    background-color: var(--muc);
+    color: #7A8B9E;
+}   
+
+.khung-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px;
+    padding: 30px 200px;
+    justify-self: start;
+    gap: 50px;
+    font-family: var(--font-body);
+}
+
+.Logo-footer{
+    color: var(--trang);
+    font-family: var(--font-title);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Logo-slogan-footer{
+    font-size: 15px;
+}
+
+.phan-nho{
+    color: var(--trang);
+    font-size: 15px;
+
+}
+
+.phan-lon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.phan-lon a{
+    font-size: 13px;
+    font-family: var(--font-body);
+}
+
+.phan-lon a:hover{
+    color: var(--trang);
+    cursor: pointer;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.link{
+    cursor: pointer;
+    color: #7A8B9E;
+    text-decoration: none;
+}
+
+.link:hover{
+    cursor: pointer;
+    color: var(--trang);
+    text-decoration: none;
+}
+
+.khung-ben{
+    background-color: var(--trang);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.tieu-de-ben{
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: var(--muc);
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--muc);
+}
+
+.tin-moi-item{
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+
+.tin-nong-so{
+    font-family: var(--font-title);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--line);
+
+}
+
+.tin-moi-item h4{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.tin-moi-item h4 a{
+    color: var(--muc);
+    text-decoration: none;
+}
+
+.tin-moi-item h4 a:hover{
+    color: #605f5f;
+    text-decoration: underline;
+}
+
+.tin-moi-item span{
+    font-size: 12px;
+    color: #605f5f;
+}
+
+nav{
+    margin: 0 50px;
+}

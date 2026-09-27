@@ -1,0 +1,198 @@
+:root{
+    --muc: #15181D;
+    --nen: #EDEAE2;
+    --trang: #FBFAF7;
+    --line: #D8D4C9;
+    --font-title: "Literata", Georgia, serif; 
+    --font-body: "Inter", -apple-system, sans-serif;
+}
+* { 
+    box-sizing: border-box; /* Giữ chuẩn width/height khi có padding và border */
+    margin: 0;              /* Xóa lề ngoài mặc định của trình duyệt */
+    padding: 0;             /* Xóa khoảng đệm trong mặc định của trình duyệt */
+    
+}
+
+body{
+    line-height: 1.55;
+    background-color: var(--nen);
+    color: var(--muc);
+    font-family: var(--font-title);
+    text-decoration: none;
+
+}
+
+.khung{
+    width: 100%;
+    margin: 0;
+    padding: 0 24px;
+    
+}
+
+.thanhdangnhap .khung{
+    background-color: var(--trang);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    color:var(--muc);
+}
+
+.thanhdangnhap .lien-ket{display:flex; gap:18px;}
+.thanhdangnhap .lien-ket a{color:var(--muc);text-decoration: none;}
+.thanhdangnhap .lien-ket a:hover{color: #605f5f;}
+
+
+
+.main-nav {
+  padding: 22px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+    font-weight: 700px;
+    font-size: clamp(32px,40px,48px); /* clamp () là một hàm trong CSS giúp tự động giới hạn kích thước;*/
+    margin: 0;
+    letter-spacing: -0.5px;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--muc);
+    font-weight: bold;
+}
+
+nav{
+    border-bottom: 2px solid var(--line);
+}
+
+
+.nguon{
+    max-width: 900px;
+    margin: 24px auto 0;
+    padding: 0 24px;
+    font-size: 13px;
+    color: #605f5f;
+    font-family: var(--font-body);
+}
+
+.tieu-de-trang{
+    max-width: 900px;
+    margin: 12px auto 0;
+    padding: 0 24px;
+    font-family: var(--font-body);
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    color: var(--muc);
+}
+
+.mo-ta-trang{
+    max-width: 900px;
+    margin: 16px auto 0;
+    padding: 0 24px;
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #45433f;
+}
+
+.noi-dung{
+    max-width: 900px;
+    margin: 24px auto 60px;
+    padding: 0 24px;
+}
+
+.noi-dung pre{
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--muc);
+    white-space: pre-wrap;
+    margin-bottom: 24px;
+}
+
+.minh-hoa{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 24px 0;
+    border-radius: 4px;
+}
+.chu-thich{
+    margin: 0px;
+    font-size: 12px;
+    background-color: var(--muc);
+    color: var(--trang);
+}
+
+.button-nav a{
+    border: none;
+    background-color: transparent; /* transparent là tàng hình oke đừng hỏi nhiều */ /* Sửa chính tả: tàn hình -> tàng hình */
+    color: var(--muc);
+    font-family: var(--font-body);
+    font-size: 15.2px;
+    font-weight: 600px;
+    padding: 8px 14px;
+    cursor: pointer; /*chuyển con trỏ chuột thành hình bàn tay trỏ chuột */
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--muc);
+    color: #7A8B9E;
+    font-family: var(--font-body);
+}   
+
+.khung-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px;
+    padding: 30px 200px;
+    justify-self: start;
+    gap: 50px;
+}
+
+.Logo-footer{
+    color: var(--trang);
+    font-family: var(--font-title);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Logo-slogan-footer{
+    font-size: 15px;
+}
+
+.phan-nho{
+    color: var(--trang);
+    font-size: 15px;
+
+}
+
+.phan-lon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.phan-lon a{
+    font-size: 13px;
+    font-family: var(--font-body);
+    text-decoration: none;
+    color: #7A8B9E;
+}
+
+.phan-lon a:hover{
+    color: var(--trang);
+    cursor: pointer;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.main-nav{
+    margin: 0 50px;
+}
